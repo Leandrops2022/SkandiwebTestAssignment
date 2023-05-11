@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.footer {
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 95.5%;
+  text-align: center;
+  display: block;
+}
+.footer h3 {
+  font-family: "Roboto";
+}
+
+@media screen and (max-width: 640px) {
+  .footer {
+    width: 80%;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */

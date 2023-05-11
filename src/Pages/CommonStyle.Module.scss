@@ -1,0 +1,21 @@
+@import '../SassVars/variables';
+
+.main {
+    margin: auto;
+    width: 98%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: $font;
+    font-size: $fontSize * 2.5;
+    background: rgb(185, 184, 197);
+
+}
+
+@media screen and (max-width: 640px) {
+    .main {
+        overflow-x: hidden;
+        padding: 0;
+    }
+}

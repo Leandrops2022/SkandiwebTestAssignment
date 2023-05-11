@@ -1,0 +1,21 @@
+@import '../../SassVars/variables';
+
+.footer {
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 95.5%;
+    text-align: center;
+    display: block;
+
+    h3 {
+        font-family: $font;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer {
+        width: 80%;
+    }
+}

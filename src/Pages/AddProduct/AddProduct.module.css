@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.main {
+  margin: auto;
+  width: 98%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Roboto";
+  font-size: 1.25rem;
+  background: rgb(185, 184, 197);
+}
+
+@media screen and (max-width: 640px) {
+  .main {
+    overflow-x: hidden;
+    padding: 0;
+  }
+}
+.formDiv {
+  min-height: 90vh;
+  background: linear-gradient(180deg, rgb(185, 184, 197) 0%, rgb(226, 226, 240) 74%);
+  width: 99.8%;
+  display: flex;
+  flex-direction: column;
+}
+.formDiv .formStyle {
+  color: #4d4d4d;
+  box-sizing: border-box;
+  padding: 1.5rem 0 0 5rem;
+  font: "Roboto";
+  background-color: rgba(213, 225, 230, 0.8);
+  min-height: 100vh;
+  min-width: 100%;
+}
+.formDiv .formStyle span {
+  font-size: medium;
+  margin-left: 1rem;
+  color: #ff6666;
+}
+.formDiv .formStyle label {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.formDiv .formStyle input[type=text],
+.formDiv .formStyle input[type=number] {
+  border: 1px solid silver;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 30rem;
+  padding-left: 8px;
+  line-height: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+.formDiv .formStyle input[type=text]::-moz-placeholder, .formDiv .formStyle input[type=number]::-moz-placeholder {
+  color: silver;
+}
+.formDiv .formStyle input[type=text]::placeholder,
+.formDiv .formStyle input[type=number]::placeholder {
+  color: silver;
+}
+.formDiv .formStyle .typeSwitcherDiv {
+  margin-top: 1.5rem;
+}
+.formDiv .formStyle .typeSwitcherDiv label {
+  display: inline;
+  margin-right: 1rem;
+}
+.formDiv .formStyle .typeSwitcherDiv select {
+  display: inline;
+  height: 1.8rem;
+  width: 8rem;
+  text-align: center;
+  border-radius: 4px;
+  color: #4d4d4d;
+  font-size: medium;
+}
+.formDiv .formStyle .typeSwitcherDiv .productSpecification {
+  box-sizing: border-box;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.formDiv .formStyle .typeSwitcherDiv .productSpecification p {
+  text-align: justify;
+  padding: 0.3rem 0.3rem;
+  font-size: 0.9rem;
+  max-width: 35vw;
+  color: #8d8d8d;
+}
+
+@media screen and (max-width: 640px) {
+  .formDiv {
+    margin-top: 6.8rem;
+  }
+  .formDiv .formStyle {
+    padding: 1.5rem 0 0 1rem;
+  }
+  .formDiv .formStyle span {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.5rem 0.78rem 0 0.3rem;
+    margin-left: 0;
+  }
+  .formDiv .formStyle select {
+    width: 12rem;
+    text-align: center;
+  }
+  .formDiv .formStyle label {
+    margin-top: 1.2rem;
+  }
+  .formDiv .formStyle input[type=text],
+  .formDiv .formStyle input[type=number] {
+    width: 23rem;
+    margin-bottom: 0;
+  }
+  .formDiv .formStyle .typeSwitcherDiv .productSpecification p {
+    max-width: 90vw;
+    padding: 0.3rem 1.6rem 0 0;
+  }
+}/*# sourceMappingURL=AddProduct.module.css.map */

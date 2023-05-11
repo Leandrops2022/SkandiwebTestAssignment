@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.main {
+  margin: auto;
+  width: 98%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Roboto";
+  font-size: 1.25rem;
+  background: rgb(185, 184, 197);
+}
+
+@media screen and (max-width: 640px) {
+  .main {
+    overflow-x: hidden;
+    padding: 0;
+  }
+}
+.listOfProducts {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  width: 99.3%;
+  background: transparent;
+}
+.listOfProducts .divOrderBy {
+  grid-row: 1;
+  grid-column: 1/span 4;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.3rem;
+}
+.listOfProducts .divOrderBy select {
+  margin-left: 0.3rem;
+  border-radius: 8px;
+}
+.listOfProducts .product {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  background: #d5e1e6;
+  box-shadow: 3px 3px 5px black;
+  font-size: 1.2rem;
+}
+.listOfProducts .product:hover {
+  background-color: #c5d6dc;
+}
+.listOfProducts .product .checkboxContainer {
+  margin-left: 1rem;
+  align-self: flex-start;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.listOfProducts .product .checkboxContainer .deleteCheckbox {
+  height: 18px;
+  width: 18px;
+}
+.listOfProducts .product .checkboxContainer .deleteCheckbox:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  .listOfProducts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    margin-top: 6.8rem;
+  }
+  .listOfProducts .divOrderBy {
+    grid-row: 1;
+    grid-column: 1/span 2;
+  }
+}/*# sourceMappingURL=ListProducts.module.css.map */

@@ -1,0 +1,123 @@
+@import '../../SassVars/variables';
+@import '../CommonStyle.Module.scss';
+
+.formDiv {
+    min-height: 90vh;
+    background: $gradient;
+    width: 99.8%;
+    display: flex;
+    flex-direction: column;
+
+    .formStyle {
+        color: $fontColor;
+        box-sizing: border-box;
+        padding: 1.5rem 0 0 5rem;
+        font: $font;
+        background-color: transparentize($secondaryColor, $amount: 0.2);
+        min-height: 100vh;
+        min-width: 100%;
+
+        span {
+            font-size: medium;
+            margin-left: 1rem;
+            color: lighten($color: red, $amount: 20%);
+        }
+
+        label {
+            display: block;
+            width: fit-content;
+        }
+
+        input[type=text],
+        input[type=number] {
+            border: 1px solid silver;
+            box-sizing: border-box;
+            border-radius: 6px;
+            width: 30rem;
+            padding-left: 8px;
+            line-height: 1.8rem;
+            margin-bottom: 1.2rem;
+
+            &::placeholder {
+                color: silver;
+            }
+        }
+
+        .typeSwitcherDiv {
+            margin-top: 1.5rem;
+
+            label {
+                display: inline;
+                margin-right: 1rem;
+            }
+
+            select {
+                display: inline;
+                height: 1.8rem;
+                width: 8rem;
+                text-align: center;
+                border-radius: 4px;
+                color: $fontColor;
+                font-size: medium;
+            }
+
+            .productSpecification {
+                box-sizing: border-box;
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    text-align: justify;
+                    padding: 0.3rem 0.3rem;
+                    font-size: $fontSize *1.8;
+                    max-width: 35vw;
+                    color: lighten($color: $fontColor, $amount: 25%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .formDiv {
+        margin-top: 6.8rem;
+
+        .formStyle {
+            padding: 1.5rem 0 0 1rem;
+
+            span {
+                box-sizing: border-box;
+                display: inline-block;
+                padding: 0.5rem 0.78rem 0 0.3rem;
+                margin-left: 0;
+
+            }
+
+            select {
+                width: 12rem;
+                text-align: center;
+            }
+
+            label {
+                margin-top: 1.2rem;
+            }
+
+            input[type=text],
+            input[type=number] {
+                width: 23rem;
+                margin-bottom: 0;
+            }
+
+            .typeSwitcherDiv {
+                .productSpecification {
+
+                    p {
+                        max-width: 90vw;
+                        padding: 0.3rem 1.6rem 0 0;
+                    }
+                }
+            }
+        }
+    }
+}

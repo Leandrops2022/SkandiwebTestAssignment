@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.main {
+  margin: auto;
+  width: 98%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Roboto";
+  font-size: 1.25rem;
+  background: rgb(185, 184, 197);
+}
+
+@media screen and (max-width: 640px) {
+  .main {
+    overflow-x: hidden;
+    padding: 0;
+  }
+}/*# sourceMappingURL=CommonStyle.Module.css.map */
